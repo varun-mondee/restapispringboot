@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Doctor home</title>
+</head>
+<body align="center" bgcolor="AliceBlue">
+
+<h1>Doctor Home</h1>
+<center>
+<h2>
+    <a th:href="@{/doctor/myprofile/{id}(id=${doctor.id})}">Profile</a>
+    <a th:href="@{/doctor/myappointments/{id}(id=${doctor.id})}">My appointments</a>
+    <a th:href="@{/}">Logout</a>
+</h2>
+</center>
+<img src = "https://www.askacharya.com/uploads/product/1610184106_1573550208_vastu-for-clinic.jpg">
+</body>
+</html>

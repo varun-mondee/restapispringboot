@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Home</title>
+</head>
+<body align="center" bgcolor="AliceBlue">
+<center>
+ <h1> Patient Home </h1>
+ <h1>
+<a th:href="@{/patient/myprofile/{id}(id=${patient.id})}">Profile</a>
+<a th:href="@{/patient/{id}/appointment(id=${patient.id})}">Book Appointment</a>
+<a th:href="@{/patient/{id}/myappointments(id=${patient.id})}">My Appointments</a>
+<a th:href="@{/}">Logout</a>
+</h1>
+</center>
+ <img src = "https://cdn10.phillymag.com/wp-content/uploads/2014/01/veggiesheartshapeBlog1.jpg" alt = "doctor">
+
+</body>
+</html>
